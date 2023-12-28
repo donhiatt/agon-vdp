@@ -111,6 +111,7 @@ void VDUStreamProcessor::vdu_sys() {
 //
 void VDUStreamProcessor::vdu_sys_video() {
 	auto mode = readByte_t();
+	//debug_log("mode = 0x%x\n", mode);
 
 	switch (mode) {
 		case VDP_GP: {					// VDU 23, 0, &80

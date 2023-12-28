@@ -53,13 +53,13 @@
 #define REVISION		4
 #define RC				0
 
-#define	DEBUG			0						// Serial Debug Mode: 1 = enable
+#define	DEBUG			1						// Serial Debug Mode: 1 = enable
 #define SERIALBAUDRATE	115200
 
 HardwareSerial	DBGSerial(0);
 
 bool			terminalMode = false;			// Terminal mode (for CP/M)
-bool			consoleMode = false;			// Serial console mode (0 = off, 1 = console enabled)
+bool			consoleMode = true;			    // Serial console mode (0 = off, 1 = console enabled)
 
 #include "agon.h"								// Configuration file
 #include "agon_ps2.h"							// Keyboard support

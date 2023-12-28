@@ -33,6 +33,7 @@ inline void writeByte(uint8_t b) {
 // Send a packet of data to the MOS
 //
 void send_packet(uint8_t code, uint16_t len, uint8_t data[]) {
+	//debug_log("send_packet()\n");
 	writeByte(code + 0x80);
 	writeByte(len);
 	for (int i = 0; i < len; i++) {
